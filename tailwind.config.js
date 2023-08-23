@@ -4,7 +4,13 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  theme: {
+  theme: {colors: {
+    'polygreen':"#004F2D",
+    'flame':"#DE541E",
+    'orangeweb':"#FCA311",
+    'alabaster':'#E6EBE0',
+    'lapis':'#38618c'
+  },
     extend: {},
   },
   plugins: [],

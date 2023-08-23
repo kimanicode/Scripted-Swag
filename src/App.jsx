@@ -1,4 +1,6 @@
+import Banner from "./components/Banner"
 import Header from "./components/Header"
+import ShowcaseProducts from "./components/ShowcaseProducts"
 
 
 function App() {
@@ -8,6 +10,8 @@ function App() {
     
       <div>
         <Header />
+        <Banner/>
+        <ShowcaseProducts />
       </div>
       
       
