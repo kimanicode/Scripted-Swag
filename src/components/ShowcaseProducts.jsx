@@ -35,11 +35,11 @@ const ProductCard = ({ product }) => {
  
   return (
     
-    <div className="bg-aliceblue rounded-lg shadow-md  flex flex-col p-3 md:h-[400px] hover:bg-alabaster/75   space-y-4 m-2 md:w-1/4">
-      <img src={product.imageUrl} alt={product.name} className="w-full h-2/4  bg-platinum" />
+    <div className="bg-aliceblue rounded-lg shadow-md  flex flex-col p-3 md:h-[400px] hover:bg-platinum/75   space-y-4 m-2 md:w-1/4">
+      <img src={product.imageUrl} alt={product.name} className="w-full h-2/4 hover:rounded-lg bg-platinum" />
       
       <div className='flex flex-col  w-full '>
-        <p className='px-2 text-alabaster w-1/2 text-center rounded bg-flame font-thin'>{product.type}</p>
+        <p className='px-2 text-alabaster w-1/2 text-center rounded bg-logo font-thin'>{product.type}</p>
         <div className='flex justify-between'>
            <h3 className="font-thin text-gray-950">{product.name}</h3>
            <p className='font-bold  '>Ksh. 1700</p>
@@ -50,7 +50,7 @@ const ProductCard = ({ product }) => {
         <p className="font-thin">{product.description}</p>
         </div>
 
-        <div className='bg-alabaster h-[2px] mt-2'></div>
+        <div className='bg-logo h-[2px] mt-2'></div>
         <div className='flex justify-between basis-1/3 py-2'>
           <div className='flex  items-center  '>
                     <p className="text-thin font-semibold mb-4">Color:</p>
@@ -74,7 +74,7 @@ const ProductCard = ({ product }) => {
 
       
           </div>
-          <div className='basis-1/2'><button className="bg-polygreen hover:bg-polygreen/50 text-alabaster rounded-lg  p-2 hover:bg-blue-600  flex  gap-2 ">
+          <div className='basis-1/2'><button className="bg-orangeweb hover:bg-orangeweb/50 text-alabaster rounded-lg  p-2 hover:bg-blue-600  flex  gap-2 ">
         Add to Cart  <span className='text-2xl'><AiOutlineShoppingCart/></span>
       </button></div>
           
