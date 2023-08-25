@@ -35,15 +35,11 @@ const ProductCard = ({ product }) => {
  
   return (
     
-    <div className="bg-aliceblue rounded-lg shadow-md  flex flex-col p-3 md:h-[400px]    space-y-4 m-2 md:w-1/4">
-      <img src={product.imageUrl} alt={product.name} className="w-full h-2/3 rounded-lg bg-lapis" />
-      {/* <h3 className="text-xl font-semibold">{product.name}</h3>
+    <div className="bg-aliceblue rounded-lg shadow-md  flex flex-col p-3 md:h-[400px] hover:bg-alabaster/75   space-y-4 m-2 md:w-1/4">
+      <img src={product.imageUrl} alt={product.name} className="w-full h-2/4  bg-platinum" />
       
-      <button className="bg-polygreen hover:bg-polygreen/50 text-alabaster rounded-lg py-2 px-4 mt-auto hover:bg-blue-600 transition duration-300 flex gap-2 ">
-        Add to Cart  <span className='text-2xl'><AiOutlineShoppingCart/></span>
-      </button> */}
       <div className='flex flex-col  w-full '>
-        <p className='px-2 text-alabaster w-1/2 text-center rounded bg-flame font-thin'>Hoodies</p>
+        <p className='px-2 text-alabaster w-1/2 text-center rounded bg-flame font-thin'>{product.type}</p>
         <div className='flex justify-between'>
            <h3 className="font-thin text-gray-950">{product.name}</h3>
            <p className='font-bold  '>Ksh. 1700</p>
@@ -55,10 +51,10 @@ const ProductCard = ({ product }) => {
         </div>
 
         <div className='bg-alabaster h-[2px] mt-2'></div>
-        <div className='flex justify-between py-2'>
-          <div className='flex   '>
+        <div className='flex justify-between basis-1/3 py-2'>
+          <div className='flex  items-center  '>
                     <p className="text-thin font-semibold mb-4">Color:</p>
-                      <div className="relative inline-block ">
+                      <div className="relative ">
                         <select
                           className="block appearance-none w-full bg-white border border-gray-300 py-2 px-3 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                           value={selectedColor}
@@ -78,7 +74,7 @@ const ProductCard = ({ product }) => {
 
       
           </div>
-          <div className='basis-1/3'><button className="bg-polygreen hover:bg-polygreen/50 text-alabaster rounded-lg  px-2 hover:bg-blue-600  flex  gap-2 ">
+          <div className='basis-1/2'><button className="bg-polygreen hover:bg-polygreen/50 text-alabaster rounded-lg  p-2 hover:bg-blue-600  flex  gap-2 ">
         Add to Cart  <span className='text-2xl'><AiOutlineShoppingCart/></span>
       </button></div>
           
@@ -108,46 +104,55 @@ const ShowcaseProducts = () => {
    
     {
       name: 'React Hoodie',
+      type:'Hoodies',
       description: 'The perfect blend of style and coziness. ',
       imageUrl: product1Image,
     },
     {
       name: 'Docker Hoodie',
+      type:'Hoodies',
       description: 'The perfect blend of style and coziness. ',
       imageUrl: product2Image,
     },
     {
       name: 'NodeJs Mug',
+      type:'Mugs',
       description: 'The perfect blend of style and coziness.',
       imageUrl: product3Image,
     },
     {
       name: 'Just Build It',
+      type:'Tshirt',
       description: 'The perfect blend of style and coziness.',
       imageUrl: product4Image,
     },
     {
       name: 'Sticker',
+      type:'Sticker',
       description: 'The perfect blend of style and coziness. ',
       imageUrl: product5Image,
     },
     {
       name: 'Dev Backpack',
+      type:'Bag',
       description: 'The perfect blend of style and coziness. ',
       imageUrl: product6Image,
     },
     {
       name: 'TechGuy Tshirt',
+      type:'Tshirt',
       description: 'The perfect blend of style and coziness. ',
       imageUrl: product7Image,
     },
     {
       name: 'Get me coffee!',
+      type:'Headwear',
       description: 'The perfect blend of style and coziness.',
       imageUrl: product8Image,
     },
     {
-      name: 'Get me coffee!',
+      name: 'Sweat Shirt',
+      type:'Sweatshirt',
       description: 'The perfect blend of style and coziness.',
       imageUrl: product9Image,
     },
