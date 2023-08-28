@@ -14,6 +14,7 @@ export default {
     'mintgreen':'#CEF9F2',
     'aliceblue':'#F4FAFF',
     'platinum': '#DCDCDD',
+    'raisan': '#2E282A',
   },
     extend: {},
   },

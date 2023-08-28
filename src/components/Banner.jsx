@@ -8,12 +8,12 @@ import { FaChevronRight, FaChevronLeft } from 'react-icons/fa';
 const Banner = () => {
   const carouselContent =[
     <div className='p-6 md:m-10 m-5 rounded-2xl bg-orangeweb/50 flex md:justify-between justify-center h-[300px] '>
-        <div className='p-3 basis-2/3 flex flex-col items-center' >
+        <div className='p-3 basis-2/3 flex flex-col items-start' >
 
            <div>
            <h1 className='md:text-6xl text-xl font-bold'> Are you ready to <br/> <span className='text-polygreen'>wear your code? </span></h1>
 
-            <p className='py-3'> Your code defines your work, let your swag define your style</p>
+            <p className='py-3 text-aliceblue'> Your code defines your work, let your swag define your style</p>
 
            </div>
               
@@ -29,12 +29,12 @@ const Banner = () => {
         </div>
     </div>,
     <div className='p-6 md:m-10 m-5 rounded-2xl bg-logo flex md:justify-between justify-center h-[300px] '>
-    <div className='p-3 basis-2/3 flex flex-col items-center' >
+    <div className='p-3 basis-2/3 flex flex-col items-start' >
 
        <div>
        <h1 className='md:text-6xl text-xl font-bold'> From Lines of Code  <br/> <span className='text-polygreen'>to Lines of Style </span></h1>
 
-        <p className='py-3'> Unleash Your Swag!</p>
+        <p className='py-3 text-aliceblue'> Unleash Your Swag!</p>
 
        </div>
           
@@ -50,12 +50,12 @@ const Banner = () => {
     </div>
 </div>,
     <div className='p-6 md:m-10 m-5 rounded-2xl bg-lapis flex md:justify-between justify-center h-[300px] '>
-    <div className='p-3 basis-2/3 flex flex-col items-center' >
+    <div className='p-3 basis-2/3 flex flex-col items-start' >
 
        <div>
        <h1 className='md:text-6xl text-xl font-bold'>Code Crafted <br/> <span className='text-polygreen'> Swag Perfected </span></h1>
 
-        <p className='py-3'>Wear Your Passion</p>
+        <p className='py-3 text-aliceblue'>Wear Your Passion</p>
 
        </div>
           
